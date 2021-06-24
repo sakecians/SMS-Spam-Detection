@@ -15,11 +15,11 @@ def demo(request):
 
 
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'home.html')
 
 
 def detect(request, ans={'prediction': "", 'classes': ""}):
-    return render(request, 'spamDetection.html', ans)
+    return render(request, 'predict.html', ans)
 
 
 def predict(request):
